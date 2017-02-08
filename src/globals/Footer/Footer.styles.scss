@@ -1,0 +1,23 @@
+@import "../../styles/base";
+
+.footer {
+  background-color: $main-primary;
+  min-height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 20px 10px;
+
+  h3, p, a {
+    color: $white;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}

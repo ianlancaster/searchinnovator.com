@@ -1,0 +1,22 @@
+@import "../../styles/base";
+
+.coreLayout {
+  height: 100%;
+  position: relative;
+  width: 100%;
+
+  main {
+    background-color: $white;
+    min-height: 98vh;
+    overflow-wrap: break-word;
+    padding-top: 75px;
+
+    @include tablet {
+      padding-top: 120px;
+    }
+
+    @include mobile {
+      padding: 0;
+    }
+  }
+}

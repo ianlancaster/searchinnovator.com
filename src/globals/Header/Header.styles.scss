@@ -1,0 +1,59 @@
+@import "../../styles/base";
+
+.header {
+  @include material-shaddow-bottom;
+
+  background-color: $light-gray;
+  height: $height-unit;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+
+  @include tablet {
+    flex-direction: column;
+    height: 120px;
+    padding: 0;
+  }
+
+  @include mobile {
+    position: relative;
+    justify-content: flex-end;
+    height: 100px;
+  }
+}
+
+.logo {
+  font-size: 44px;
+  padding-bottom: 4px;
+
+  @include tablet {
+    font-size: 40px;
+  }
+
+  @include mobile {
+    font-size: 32px;
+  }
+}
+
+.logoGrayHalf {
+  font-weight: 500;
+  color: $dark-gray;
+}
+
+.logoBlueHalf {
+  font-weight: 400;
+  color: $primary-blue;
+}
+
+.logoTextGrayHalf {
+  font-weight: 400;
+  padding-left: 10px;
+  color: $dark-gray;
+}
+
+.logoTextBlueHalf {
+  font-weight: 300;
+  color: $primary-blue;
+}
